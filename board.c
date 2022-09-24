@@ -1,15 +1,14 @@
 # include "board.h"
 #include <stdio.h>
 
-char* newBoard()
+char ** newBoard()
 {
-    char board[3][3] = {
-        {' ', ' ', ' '},
-        {' ', ' ', ' '},
-        {' ', ' ', ' '} 
+    static char board[3][3] = {
+        {NULL, NULL, NULL},
+        {NULL, NULL, NULL},
+        {NULL, NULL, NULL} 
     };
-    char (*)returnBoard[3][3] = &board;
-    return returnBoard;
+    return board; 
 }
 
 // char* addToken(char* board_, int coord1, int coord2, char token)

@@ -3,7 +3,7 @@
 
 int main()
 {
-    char *board = newBoard();
+    char **board = newBoard();
 
     // board = addToken(board, 1, 1, 'X');
 
